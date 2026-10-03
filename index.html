@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ilya shop — объявления</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f5f7;
+      color: #111;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 18px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header {
+      max-width: 1150px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 800;
+    }
+
+    .profile {
+      background: #00a95c;
+      color: white;
+      text-decoration: none;
+      padding: 11px 16px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .hero {
+      max-width: 1150px;
+      margin: 45px auto 30px;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 44px;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      color: #666;
+      font-size: 17px;
+    }
+
+    .products {
+      max-width: 1150px;
+      margin: auto;
+      padding: 0 20px 60px;
+
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+      transition: 0.2s;
+    }
+
+    .product:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    }
+
+    .product-image {
+      width: 100%;
+      height: 250px;
+      background: #e9e9e9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+      font-size: 14px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .product-info {
+      padding: 18px;
+    }
+
+    .product-name {
+      font-size: 19px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      line-height: 1.25;
+    }
+
+    .price {
+      font-size: 23px;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    .buy {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background: #00a95c;
+      color: white;
+      text-decoration: none;
+      padding: 13px;
+      border-radius: 12px;
+      font-weight: 700;
+    }
+
+    .buy:hover {
+      background: #008f4d;
+    }
+
+    .contacts {
+      background: #111;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .contacts h2 {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .contacts p {
+      color: #aaa;
+      margin-bottom: 25px;
+    }
+
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .contact-button {
+      text-decoration: none;
+      color: white;
+      padding: 14px 20px;
+      border-radius: 12px;
+      font-weight: 700;
+    }
+
+    .avito {
+      background: #00a95c;
+    }
+
+    .telegram {
+      background: #229ed9;
+    }
+
+    footer {
+      background: #111;
+      color: #777;
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .products {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      .product-image {
+        height: 180px;
+      }
+
+      .product-info {
+        padding: 13px;
+      }
+
+      .product-name {
+        font-size: 16px;
+      }
+
+      .price {
+        font-size: 19px;
+      }
+
+      .buy {
+        font-size: 13px;
+        padding: 11px 5px;
+      }
+
+      .logo {
+        font-size: 20px;
+      }
+
+      .profile {
+        font-size: 11px;
+        padding: 9px 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header">
+
+    <div class="logo">
+      ilya shop
+    </div>
+
+    <a
+      class="profile"
+      href="https://www.avito.ru/zhigulevsk/detskaya_odezhda_i_obuv/zimnie_sapozhki_dlya_devochki_4342206733"
+      target="_blank"
+    >
+      мой профиль на авито
+    </a>
+
+  </div>
+</header>
+
+
+<section class="hero">
+
+  <h1>мои товары</h1>
+
+  <p>
+    актуальные объявления. купить можно через авито.
+  </p>
+
+</section>
+
+
+<section class="products">
+
+
+  <!-- 1 -->
+
+  <div class="product">
+
+    <div class="product-image">
+      фото товара
+    </div>
+
+    <div class="product-info">
+
+      <div class="product-name">
+        зимние сапожки для девочки
+      </div>
+
+      <div class="price">
+        цена на авито
+      </div>
+
+      <a
+        class="buy"
+        href="https://www.avito.ru/zhigulevsk/detskaya_odezhda_i_obuv/zimnie_sapozhki_dlya_devochki_4342206733"
+        target="_blank"
+      >
+        посмотреть на авито
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- 2 -->
+
+  <div class="product">
+
+    <div class="product-image">
+      фото товара
+    </div>
+
+    <div class="product-info">
+
+      <div class="product-name">
+        ботинки зимние для девочки
+      </div>
+
+      <div class="price">
+        цена на авито
+      </div>
+
+      <a
+        class="buy"
+        href="https://www.avito.ru/zhigulevsk/detskaya_odezhda_i_obuv/botinki_zimnie_dlya_devochki_4341711698"
+        target="_blank"
+      >
+        посмотреть на авито
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- 3 -->
+
+  <div class="product">
+
+    <div class="product-image">
+      фото товара
+    </div>
+
+    <div class="product-info">
+
+      <div class="product-name">
+        рубашка для мальчика
+      </div>
+
+      <div class="price">
+        цена на авито
+      </div>
+
+      <a
+        class="buy"
+        href="https://www.avito.ru/zhigulevsk/detskaya_odezhda_i_obuv/rubashka_dlya_malchika_7349476054"
+        target="_blank"
+      >
+        посмотреть на авито
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- 4 -->
+
+  <div class="product">
+
+    <div class="product-image">
+      фото товара
+    </div>
+
+    <div class="product-info">
+
+      <div class="product-name">
+        ботинки зимние
+      </div>
+
+      <div class="price">
+        цена на авито
+      </div>
+
+      <a
+        class="buy"
+        href="https://www.avito.ru/zhigulevsk/detskaya_odezhda_i_obuv/botinki_zimnie_4341790428"
+        target="_blank"
+      >
+        посмотреть на авито
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- 5 -->
+
+  <div class="product">
+
+    <div class="product-image">
+      фото товара
+    </div>
+
+    <div class="product-info">
+
+      <div class="product-name">
+        лыж
